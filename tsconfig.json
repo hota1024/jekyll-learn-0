@@ -1,6 +1,20 @@
 {
   "compilerOptions": {
     "baseUrl": ".",
-    "outDir": "."
-  }
+    "outDir": ".",
+    "lib": [
+      "DOM",
+      "WebWorker"
+    ],
+    "types": [
+      "workbox-sw"
+    ]
+  },
+  "include": [
+    "./**/*.ts"
+  ],
+  "exclude": [
+    "./**/*.js",
+    "node_modules"
+  ]
 }
